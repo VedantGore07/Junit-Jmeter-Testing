@@ -58,7 +58,7 @@ public class TestLoginManagement {
     {
         ILoginDAO loginDAOSpy = Mockito.spy(ILoginDAO.class);
 
-        ILoginMgmtService lologinService = new LoginMgmtServiceImpl(loginDAOSpy);
+        ILoginMgmtService loginService = new LoginMgmtServiceImpl(loginDAOSpy);
 
         loginService.registerUser("Raj", "Admin");
         loginService.registerUser("Aditya", "Visitor");
